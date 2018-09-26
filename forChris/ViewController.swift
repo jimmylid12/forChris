@@ -38,26 +38,22 @@ class ViewController: UIViewController
         case food = "food"
     }
     
+    
+    
     @IBAction func optionTapped(_ sender: UIButton)
     {
-        guard let title = sender.currentTitle, let option = Options(rawValue: title) else {
-            return
-        }
+        optionButtons.forEach {(button) in
+            UIView.animate(withDuration: 0.3, animations:
+                {
+                    button.isHidden = !button.isHidden
+                    self.view.layoutIfNeeded()
+            })
+
+   
         
-        switch option
-        {
-        case.health:
-            print ("health")
-        
-        case.nutrition:
-            print ("nutrtion")
-            
-        default:
-            print ("nutrition")
-            
-       
-            
-        }
     }
+    
+    
 }
 
+}

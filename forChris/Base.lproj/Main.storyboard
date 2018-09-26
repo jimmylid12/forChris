@@ -47,15 +47,6 @@
                                             <action selector="optionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oE6-F0-Bb9"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWX-Qt-SUY">
-                                        <rect key="frame" x="41.5" y="0.0" width="32" height="0.0"/>
-                                        <state key="normal" title="food">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="optionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9a9-lh-IpY"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="iFd-dr-trA"/>
@@ -162,7 +153,6 @@
                     <connections>
                         <outletCollection property="optionButtons" destination="tFF-1l-ma5" collectionClass="NSMutableArray" id="pMu-q3-F5U"/>
                         <outletCollection property="optionButtons" destination="pfp-Rw-v1M" collectionClass="NSMutableArray" id="wHr-rb-TPa"/>
-                        <outletCollection property="optionButtons" destination="xWX-Qt-SUY" collectionClass="NSMutableArray" id="Kej-ef-XuK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
